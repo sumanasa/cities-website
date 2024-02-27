@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cards.css"> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Cards</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="navbar.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="modal" data-target="#loginModal" href="#">Login<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="carosel.html">Carosel</a>
+                  <a class="dropdown-item" href="">Cards</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navbar.html">Created By</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-login" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+      
+            <div class="modal-body">
+              <!-- Login Form -->
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="email" class="form-control" id="username" placeholder="Enter username" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="row mt-5" id="cards">
+        <div class="card">
+            <img src="images/new york.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h1 class="card-title">New York</h1>
+                <p class="card-sub-title">new my city</p>
+                <p class="card-info">“New York is the center of the world“
+                    NYC is one of the biggest and most important cities of the world
+                    NYC has a lot of famous places and sights
+                    You can see many stars
+                    There are many different cultures
+                </p>
+                <button class="card-btn btn-secondary">book tour</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="https://static.trip101.com/paragraph_media/pictures/002/834/534/large/1280px-Vijayawada_at_Night.jpg?1695201207"
+                class="card-img" alt="">
+            <div class="card-body">
+                <h3 class="card-title">VJW</h3>
+                <p class="card-sub-title">new my city</p>
+                <p class="card-info">Vijayawada is a beautiful city in Andhra Pradesh and is located on the
+                    banks of River Krishna. The place is also known as the second most populated city in the
+                    state.
+                </p>
+                <button class="card-btn btn-secondary">book tour</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="images/RAJ.5.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h3 class="card-title">rjmd</h3>
+                <p class="card-sub-title">new my city</p>
+                <p class="card-info">Rajahmundry is a city on the eastern banks of the sacred Godavari River, in
+                    the southeast Indian state of Andhra Pradesh. It’s home to the huge, riverside ISKCON Temple
+                    complex. North, along the river,
+                </p>
+                <button class="card-btn btn-secondary">book tour</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="images/landon.4.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h3 class="card-title">landon</h3>
+                <p class="card-sub-title">new my city</p>
+                <p class="card-info">London, the capital of England and the United Kingdom, is a 21st-century
+                    city with history stretching back to Roman times. At its centre stand the imposing Houses of
+                    Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey,
+                </p>
+                <button class="card-btn btn-secondary">book tour</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="footer">
+          <p class="text-light">&copy; 2024. All rights reserved.</p>
+           <a href="#" target="_blank"><img src="images/facebook.png" alt=""></a>
+            <a href="http://www.linkedin.com/in/hari-sri-sumanasa-3b1a7224b" target="_blank"><img src="images/linkdin.png" alt=""></a>
+            <a href="https://www.instagram.com/cute_devil_summi?igsh=bnBuNHp4c2ZndGpy&utm_source=qr " target="_blank"><img src="images/inst.png" alt=""></a>
+          </div>
+    </footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
